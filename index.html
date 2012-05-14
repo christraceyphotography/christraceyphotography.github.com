@@ -1,5 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
- <h1> Chris Tracey Photography </h1>
- <br/>
- coming soon...
+	<head>
+		<link href="./css/ctp.css" type="text/css" rel="stylesheet"></link>
+		<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="./js/ctp.js"></script>
+		<script type="text/javascript" src="./js/bg.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+   				$('#sidePanelContent').load('sideMenu.html', function() {initiateSideMenu();});
+				$('#narrower').hide();
+			});
+		</script>
+	</head>
+
+	<body class="main">
+		<img id="bg" src="./images/bg/CIMG1597.JPG" alt="">
+
+		<!-- main CTP heading -->
+		<div id="ctpHeading">
+			<a href="http://localhost/ctp"><img src="./images/ctp.gif"/></a>
+		</div>
+
+		<!-- rule of thirds grid -->
+		<div class="verticalGridLeft"></div>
+		<div class="verticalGridRight"></div>
+		<div class="horizontalGridTop"></div>
+		<div class="horizontalGridBottom"></div>
+
+		<!-- side menu -->
+		<div id="ctpSidePanelBackground" class="ctpSidePanelBackground ctpSidePanelNarrow">
+			<div id="filmstrip" class="filmstrip"></div>
+		</div>
+		<div id="ctpSidePanel" class="ctpSidePanel ctpSidePanelNarrow">
+			<div id="narrower" class="narrowerButton"><img src="./images/close.png"/></div>
+			<div id="sidePanelHeader"></div>
+			<div id="sidePanelContent" class="sidePanelContent"></div>
+		</div>
+
+	</body>
 </html>
