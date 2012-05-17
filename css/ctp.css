@@ -31,6 +31,10 @@ list-style-type: none;
 	 padding-left: 50px;
 }
 
+#500pxGallery {
+	width:100%;
+}
+
 #ctpTopMenu li a {
 	text-decoration:none;
 	color:#FFFFFF;
