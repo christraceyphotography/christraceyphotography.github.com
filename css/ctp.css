@@ -31,10 +31,10 @@ list-style-type: none;
 	 padding-left: 50px;
 }
 
-#ctpTopMenu li a:link {text-decoration:none;}
-#ctpTopMenu li a:visited {text-decoration:none;}
-#ctpTopMenu li a:hover {text-decoration:underline;}
-#ctpTopMenu li a:active {text-decoration:underline;}
+#ctpTopMenu li a {
+	text-decoration:none;
+	color:#FFFFFF;
+}
 
 .verticalGridLeft {
 	background-color:grey;
