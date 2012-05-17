@@ -16,8 +16,18 @@
 	color:#000000;
 }
 
-#ctpTopLogo {
-  float:left;
+#ctpTopMenu {
+  margin: 0;
+padding: 0;
+list-style-type: none;
+//background-image: url(navi_bg.png);
+//height: 80px;
+//width: 663px;
+//margin: auto;
+}
+
+#ctpTopMenu.li {
+	 float:left;
 }
 
 .verticalGridLeft {
