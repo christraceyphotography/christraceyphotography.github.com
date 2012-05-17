@@ -33,39 +33,44 @@ $(window).load(function(){
     $('.spotlightWrapper ul li').hover(function(){  
   		if(!modal){
 		    //...find the image inside of it and add active class to it and change opacity to 1 (no transparency)  
-		    $(this).find('img').addClass('preview').css({ 'opacity' : 1});  
+		    target_img = $(this).find('img')
+			target_img.addClass('preview').css({ 'opacity' : 1});
+            img_src = target_img.attr('src');
+			target_img.attr('src', img_src.replace(/[0-9].jpg$/, '4.jpg'))
 		}    
         //when mouse leave...  
     }, function(){  
   		if(!modal){
         	//... find the image inside of the list item we just left and remove the active class  
-        	$(this).find('img').removeClass('preview');  
+        	target_img = $(this).find('img')
+			target_img.removeClass('preview');  
+			img_src = target_img.attr('src');
+			target_img.attr('src', img_src.replace(/[0-9].jpg$/, '2.jpg'))
   		}
     });
 
 	//when mouse click the list item...  
-    $('.spotlightWrapper ul li').click(function(event){  
-  		modal = true;
+//    $('.spotlightWrapper ul li').click(function(event){  
+//  		modal = true;
 
         //... find the image inside of the list item we just clicked and remove the active class  
-       	$(this).find('img').removeClass('preview');  
+//       	$(this).find('img').removeClass('preview');  
   
         //get the other list items and change the opacity of the images inside it to the one we have set in the spotlight array  
-        $('.spotlightWrapper ul li').find('img').css({'opacity' : spotlight.opacity}) ;  
+//        $('.spotlightWrapper ul li').find('img').css({'opacity' : spotlight.opacity}) ;  
 
-
-		$('#photoViewerImg').attr("src",event.target.src);
+//		$('#photoViewerImg').attr("src",event.target.src);
 		
-		var top = '100px';
-        var left = ($(window).width() - $('#photoViewer').outerWidth()) / 2;
-        $('#photoViewer').css({position:'absolute', margin:0, top: top, left: (left > 0 ? left : 0)+'px'});
+//		var top = '100px';
+//        var left = ($(window).width() - $('#photoViewer').outerWidth()) / 2;
+//        $('#photoViewer').css({position:'absolute', margin:0, top: top, left: (left > 0 ? left : 0)+'px'});
 
 //		$('#photoViewer').center();
-		$('#photoViewer').show();
+//		$('#photoViewer').show();
 		
   
         //when mouse leave...  
-    });    
+//    });    
   
     //when mouse leaves the unordered list...  
     $('.spotlightWrapper ul').bind('mouseleave',function(){  
