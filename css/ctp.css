@@ -16,6 +16,10 @@
 	color:#000000;
 }
 
+#ctpTopLogo {
+  float:left;
+}
+
 .verticalGridLeft {
 	background-color:grey;
 	width:1px;
