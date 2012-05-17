@@ -20,12 +20,13 @@
   margin: 0;
   padding: 0;
   padding-top: 10px;
+  padding-left: 10px;
   list-style-type: none;
 }
 
 #ctpTopMenu li {
 	 float:left;
-	 padding-left: 50px;
+	 padding-right: 50px;
 }
 
 #gallery500px {
