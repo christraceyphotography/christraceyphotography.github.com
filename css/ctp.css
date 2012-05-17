@@ -28,6 +28,7 @@ list-style-type: none;
 
 #ctpTopMenu li {
 	 float:left;
+	 padding-left: 50px;
 }
 
 .verticalGridLeft {
