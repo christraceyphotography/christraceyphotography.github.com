@@ -1,8 +1,11 @@
+function ctpInit() {
+	$('.topMenu').load('topMenu.html');
+	$('.ctpHeader').load('ctpLogo.html');
+}
 
 function initiateSideMenu() {
 	$("#sidePanelHeader").height("20%");
 	$("#infoIcon").click(function() { showInfo(); });
-	//$("#galleryIcon").click(function() { showGalleryMenu(); });
 	$("#ordersAndPrintsIcon").click(function() { showOrdersAndPrinting(); });
 	$("#contactsIcon").click(function() { showContacts(); });
 	$("#narrower").click(function() { showSideMenu(); });

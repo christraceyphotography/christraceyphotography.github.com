@@ -8,6 +8,7 @@
 
 		<script type="text/javascript">
 			$(document).ready(function() {
+				ctpInit();
    				$('#sidePanelContent').load('sideMenu.html', function() {initiateSideMenu();});
 				$('#narrower').hide();
 			});
@@ -18,9 +19,7 @@
 		<img id="bg" src="./images/bg/CIMG1597.JPG" alt="">
 
 		<!-- main CTP heading -->
-		<div id="ctpHeading">
-			<a href="http://localhost/ctp"><img src="./images/ctp_logo.png"/></a>
-		</div>
+		<div class="ctpHeader"></div>
 
 		<!-- rule of thirds grid -->
 		<div class="verticalGridLeft"></div>

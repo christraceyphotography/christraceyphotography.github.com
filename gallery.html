@@ -4,17 +4,19 @@
 		<link href="./css/ctp.css" type="text/css" rel="stylesheet"></link>
 		<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>	
 		<script type="text/javascript" src="./js/gallery.js"></script>
+		<script type="text/javascript" src="./js/ctp.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-   				$('.photoViewer').hide();
+				ctpInit();
+				$('.photoViewer').hide();
 			});
 		</script>
 	</head>
 
 	<body class="main">
-		<div id="ctpHeading">
-			<a href="http://localhost/ctp"><img src="./images/ctp_logo.png"/></a>
-		</div>
+		<div class="ctpHeader"></div>
+		<div class="topMenu afterLogo"></div>
+
 		<div class='spotlightWrapper'>  
 			<ul>		
 				<li><a href='http://christracey.500px.com/favourites/photo/1'><img src="http://pcdn.500px.net/6997762/a6282b6d6ffda271bf653213c6df9d7cfd80c22a/2.jpg"/></a></li>
