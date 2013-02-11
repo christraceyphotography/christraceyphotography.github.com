@@ -16,6 +16,10 @@
 	color:#000000;
 }
 
+.logo_small {
+  width: 230px;
+}
+
 .afterLogo {
 	padding-left: 250px;
 	padding-top: 50px;
