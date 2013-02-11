@@ -5,8 +5,8 @@
 .spotlightWrapper ul {  
     list-style-type: none; /* remove the default style for list items (the circles) */  
     margin:0px; /* remove default margin */  
-    padding-left:50px; /* remove default padding */  
-	padding-top:80px;
+    padding-left:62px; /* remove default padding */  
+	padding-top:33px;
 }  
 
 .spotlightWrapper ul li {  

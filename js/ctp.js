@@ -1,6 +1,7 @@
 function ctpInit() {
 	$('.topMenu').load('topMenu.html');
 	$('.ctpHeader').load('ctpLogo.html');
+	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
 }
 
 function initiateSideMenu() {

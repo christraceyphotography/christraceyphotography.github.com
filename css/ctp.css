@@ -9,7 +9,14 @@
 .bgwidth { width: 100%; }
 .bgheight { height: 100%; }
 
-.ctpHeading {
+.underMenuLogo {
+	position:absolute;
+	top:102px;
+	left:23px;
+	color:#000000;
+}
+
+.topCornerLogo {
 	position:absolute;
 	top:0px;
 	left:20px;
