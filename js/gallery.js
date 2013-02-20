@@ -27,7 +27,12 @@ $(window).load(function(){
     };  
   
     //set the width and height of the list items same as the images  
-    $('.spotlightWrapper ul li').css({ 'width' : spotlight.imgWidth, 'height' : spotlight.imgHeight });  
+    //width = $('.spotlightWrapper ul li').find('img').width();  
+    width = $('.imgTemplate').find('img').width();  
+    alert('m: ' + width);
+    $('.imgTemplate').hide();
+    //$('.spotlightWrapper ul li').css({ 'width' : spotlight.imgWidth, 'height' : spotlight.imgHeight });  
+    $('.spotlightWrapper ul li').css({ 'width' : width, 'height' : width });  
   
     //when mouse over the list item...  
     $('.spotlightWrapper ul li').hover(function(){  

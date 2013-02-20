@@ -1,11 +1,13 @@
 .main {
 	background-color:#000000;
 }
-
+.imgTemplate {
+ width: 10%;
+}
 .spotlightWrapper ul {  
     list-style-type: none; /* remove the default style for list items (the circles) */  
     margin:0px; /* remove default margin */  
-    padding-left:62px; /* remove default padding */  
+    padding-left:0px; /* remove default padding */  
 	padding-top:33px;
 }  
 
@@ -14,8 +16,7 @@
 }  
 
 .spotlightWrapper ul li a img {  
-    width:200px; /* you don't need this, i just rescaled the images they are bigger then i want them to be ' */  
-	height:200px;
+    width: 200px;
     position:relative; /* so we can use top and left positioning */  
     border:2px solid #000000; /* remove the default blue border */  
 }  
