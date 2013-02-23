@@ -29,7 +29,6 @@ function create_500px_link(link_class) {
 }
 
 function open_tab(url) {
-  alert(url);
   window.open(url);
 }
 
