@@ -201,7 +201,7 @@
 }
 
 .fancybox-opened .fancybox-title {
-	visibility: visible;
+	visibility: hidden;
 }
 
 .fancybox-title-float-wrap {

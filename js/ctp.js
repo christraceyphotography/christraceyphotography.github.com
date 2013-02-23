@@ -2,7 +2,24 @@ function ctpInit() {
 	$('.topMenu').load('topMenu.html', function() { open500pxtab(); });
 	$('.ctpHeader').load('ctpLogo.html');
 	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
+  $('.mega-hoverlink').click(function(eventObject) { show_500px_photo(); });
 }
+
+function show_500px_photo(eventObject){
+  photo_url = $('.500px_link').attr('href')
+  open_tab(photo_url);
+}
+
+function open500pxtab() {
+  $('.new_500px_tab').click(function(){
+    open_tab('http://www.500px.com/christracey');
+  });
+}
+
+function open_tab(url) {
+  window.open(url);
+}
+
 
 function initiateSideMenu() {
 	$("#sidePanelHeader").height("20%");
@@ -10,12 +27,6 @@ function initiateSideMenu() {
 	$("#ordersAndPrintsIcon").click(function() { showOrdersAndPrinting(); });
 	$("#contactsIcon").click(function() { showContacts(); });
 	$("#narrower").click(function() { showSideMenu(); });
-}
-
-function open500pxtab() {
-  $('.new_500px_tab').click(function() {
-      window.open('http://www.500px.com/christracey');
-  });
 }
 
 function showInfo() {
@@ -46,7 +57,7 @@ function showSideMenu() {
 function sidePanelWiden() {
 	$("#ctpSidePanel").removeClass("ctpSidePanelNarrow");
 	$("#ctpSidePanelBackground").removeClass("ctpSidePanelNarrow");
-	$("#ctpSidePanel").addClass("ctpSidePanelWide");				
+	$("#ctpSidePanel").addClass("ctpSidePanelWide");
 	$("#ctpSidePanelBackground").addClass("ctpSidePanelWide");
 	$("#ctpIcons").hide('slow');
 	$("#narrower").show('fast');
