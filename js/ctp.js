@@ -1,5 +1,5 @@
 function ctpInit() {
-	$('.topMenu').load('topMenu.html', function() { open500pxtab(); });
+	$('.topMenu').load('topMenu.html', function() { init_500px_links() });
 	$('.ctpHeader').load('ctpLogo.html');
 	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
   $('.mega-hoverlink').click(function(eventObject) { show_500px_photo(); });
@@ -10,16 +10,26 @@ function show_500px_photo(eventObject){
   open_tab(photo_url);
 }
 
-function open500pxtab() {
-  $('.new_500px_tab').click(function(){
-    open_tab('http://www.500px.com/christracey');
-  });
+function init_500px_links() {
+  create_500px_link('.500px_gallery');
+  create_500px_link('.500px_contact');
+}
+
+function handler(event) {
+  target = event.target;
+  link_class = "." + target.className
+  url = $(link_class).attr('url')
+  open_tab(url);
+}
+
+function create_500px_link(link_class) {
+  url = $(link_class).attr('url')
+  $(link_class).click(handler)
 }
 
 function open_tab(url) {
   window.open(url);
 }
-
 
 function initiateSideMenu() {
 	$("#sidePanelHeader").height("20%");
