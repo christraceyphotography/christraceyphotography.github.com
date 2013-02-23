@@ -1,5 +1,5 @@
 function ctpInit() {
-	$('.topMenu').load('topMenu.html', function() { init_500px_links() });
+	$('.topMenu').load('topMenu.html', function() { init_500px_links(); });
 	$('.ctpHeader').load('ctpLogo.html');
 	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
   $('.mega-hoverlink').click(function(eventObject) { show_500px_photo(); });
@@ -17,7 +17,8 @@ function init_500px_links() {
 
 function handler(event) {
   target = event.target;
-  link_class = "." + target.className
+  target_class = target.className
+  link_class = "." + target_class.split(" ").reverse()[0];
   url = $(link_class).attr('url')
   open_tab(url);
 }
@@ -28,6 +29,7 @@ function create_500px_link(link_class) {
 }
 
 function open_tab(url) {
+  alert(url);
   window.open(url);
 }
 
@@ -37,6 +39,7 @@ function initiateSideMenu() {
 	$("#ordersAndPrintsIcon").click(function() { showOrdersAndPrinting(); });
 	$("#contactsIcon").click(function() { showContacts(); });
 	$("#narrower").click(function() { showSideMenu(); });
+  init_500px_links();
 }
 
 function showInfo() {
@@ -56,12 +59,14 @@ function showOrdersAndPrinting() {
 
 function showContacts() {
 	sidePanelWiden();
-	$('#sidePanelContent').load('contacts.html');
+	$('#sidePanelContent').load('contacts.html', function() { init_500px_links(); });
 }
 
 function showSideMenu() {
 	sidePanelNarrow();
-	$('#sidePanelContent').load('sideMenu.html', function() {initiateSideMenu();});
+	$('#sidePanelContent').load('sideMenu.html', function() {
+      initiateSideMenu();
+  });
 }
 
 function sidePanelWiden() {
