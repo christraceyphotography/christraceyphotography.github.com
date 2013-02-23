@@ -53,7 +53,7 @@ function showGalleryMenu() {
 
 function showOrdersAndPrinting() {
 	sidePanelWiden();
-	$('#sidePanelContent').load('orderprints.html');
+	$('#sidePanelContent').load('orderprints.html', function() { init_500px_links(); });
 }
 
 function showContacts() {
