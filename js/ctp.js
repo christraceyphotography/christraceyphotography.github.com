@@ -1,5 +1,5 @@
 function ctpInit() {
-	$('.topMenu').load('topMenu.html');
+	$('.topMenu').load('topMenu.html', function() { open500pxtab(); });
 	$('.ctpHeader').load('ctpLogo.html');
 	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
 }
@@ -10,6 +10,12 @@ function initiateSideMenu() {
 	$("#ordersAndPrintsIcon").click(function() { showOrdersAndPrinting(); });
 	$("#contactsIcon").click(function() { showContacts(); });
 	$("#narrower").click(function() { showSideMenu(); });
+}
+
+function open500pxtab() {
+  $('.new_500px_tab').click(function() {
+      window.open('http://www.500px.com/christracey');
+  });
 }
 
 function showInfo() {
