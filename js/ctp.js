@@ -5,8 +5,9 @@ function ctpInit() {
   $('.mega-hoverlink').click(function(eventObject) { show_500px_photo(); });
 }
 
-function show_500px_photo(eventObject){
-  photo_url = $('.500px_link').attr('href')
+function show_500px_photo(event){
+  photo_id = event.target.id;
+  photo_url = "http://500px.com/photo/" + photo_id;
   open_tab(photo_url);
 }
 
