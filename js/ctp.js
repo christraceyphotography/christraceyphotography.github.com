@@ -1,5 +1,4 @@
 function ctpInit() {
-	$('.topMenu').load('topMenu.html', function() { init_500px_links(); });
 	$('.ctpHeader').load('ctpLogo.html');
 	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
   $('.mega-hoverlink').click(function(eventObject) { show_500px_photo(eventObject); });
@@ -82,7 +81,7 @@ function sidePanelNarrow() {
 	$("#ctpSidePanel").removeClass("ctpSidePanelWide");
 	$("#ctpSidePanelBackground").removeClass("ctpSidePanelWide");
 	$("#ctpSidePanel").addClass("ctpSidePanelNarrow");
-	$("#ctpSidePanelBackground").addClass("ctpSidePanelNarrow");				
+	$("#ctpSidePanelBackground").addClass("ctpSidePanelNarrow");
 	$("#narrower").hide('fast');
 	$("#ctpIcons").show('slow');
 }
