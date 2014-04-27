@@ -1,0 +1,32 @@
+.main {
+  background-color:#000000;
+}
+
+.header {
+  float: left;
+}
+
+.headerLogo {
+  width: 25%;
+}
+
+.headerRight {
+  width: 75%;
+}
+
+.contacts {
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.contactItem {
+  float: right;
+  color: #FFFFFF;
+  padding-right: 5px;
+}
+
+.contactIcon {
+  width: 15px;
+  height: 15px;
+}
