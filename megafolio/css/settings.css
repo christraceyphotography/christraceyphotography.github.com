@@ -404,7 +404,6 @@ website:   	http://www.themepunch.com
 										}
 	.mega-hovertitle .mega-hoversubtitle			{	color:#aaa; font-size:12px; line-height:13px; font-weight: 400; margin-top: 5px;}
 
-
 	.mega-hoverlink						{	right:50%; margin-right:33px; background:url(../assets/link.png) no-repeat center;
 											-webkit-transform: translateZ(10);
 											-webkit-backface-visibility: hidden;
@@ -440,7 +439,6 @@ website:   	http://www.themepunch.com
 	.mega-hover.alone .mega-hoverlink 	{
 										margin-right:-16px; margin-top: -20px;
 									}
-
 
 
 
