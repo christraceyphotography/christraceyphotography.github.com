@@ -1,4 +1,10 @@
+@font-face {
+  font-family: corbert-regular;
+  src: url('../fonts/corbert-regular.otf');
+}
+
 .main {
+  font-family: corbert-regular, sans-serif;
   background-color:#000000;
 }
 
@@ -29,4 +35,32 @@
 .contactIcon {
   width: 15px;
   height: 15px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.email {
+  clear: both;
+  color: #FFFFFF;
+}
+
+.info {
+  clear: both;
+  color: #FFFFFF;
+}
+
+.infoTextLeft {
+  width: 40%;
+  float:left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.infoTextRight {
+  width: 50%;
+  float: right;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }

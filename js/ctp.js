@@ -1,6 +1,7 @@
 function ctpInit() {
 	$('.ctpHeader').load('ctpLogo.html');
 	$('.contacts').load('contacts.html');
+	$('.info').load('info.html');
 	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
   $('.mega-hoverlink').click(function(eventObject) { show_500px_photo(eventObject); });
 }
