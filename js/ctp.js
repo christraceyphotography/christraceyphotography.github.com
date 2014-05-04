@@ -7,12 +7,12 @@ function ctpInit() {
 	$('.header_icons').load('icons.html');
 	$('.info').load('info.html');
 
+  gallery_template = 'gallery.html';
   if (previewMode()) {
-    a = {}
-    a[getAnchor()] = portfolio[getAnchor()];
-    portfolio = a;
+    url = portfolio[getAnchor()];
+    gallery_template = 'preview.html';
   }
-  $('.gallery').load('gallery.html');
+  $('.gallery').load(gallery_template);
 
 	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
 

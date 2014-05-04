@@ -1,0 +1,18 @@
+ .preview {
+   padding-top: 10%;
+   /* border: solid 1px green; */
+   width: 100%;
+ }
+
+ .photo {
+   float: left;
+   padding-left: 10%;
+   /* position: absolute; */
+   /* left: 10%; */
+ }
+
+ .action {
+   float: left;
+   top: 0px;
+   padding-left: 10px;
+ }
