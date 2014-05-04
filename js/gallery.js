@@ -8,10 +8,10 @@ for(var key in portfolio) {
     + '      <a href="http://500px.com/photo/' + key + '" title="comment, download, print"><div id="' + key + '" class="mega-hoveraction mega-hoverprint"></div></a>'
     + '    </div>'
 
-    + '    <a class="fancybox" href="' + portfolio[key]  + '" rel="group1"><div class="clicker-top" ></div></a>'
-    + '    <a class="fancybox" href="' + portfolio[key]  + '" rel="group2"><div class="clicker-bottom" ></div></a>'
-    + '    <a class="fancybox" href="' + portfolio[key]  + '" rel="group3"><div class="clicker-right" ></div></a>'
-    + '    <a class="fancybox" href="' + portfolio[key]  + '" rel="group4"><div class="clicker-left" ></div></a>'
+    + '    <a class="fancybox" title="view" href="' + portfolio[key]  + '" rel="group1"><div class="clicker-top" ></div></a>'
+    + '    <a class="fancybox" title="view" href="' + portfolio[key]  + '" rel="group2"><div class="clicker-bottom" ></div></a>'
+    + '    <a class="fancybox" title="view" href="' + portfolio[key]  + '" rel="group3"><div class="clicker-right" ></div></a>'
+    + '    <a class="fancybox" title="view" href="' + portfolio[key]  + '" rel="group4"><div class="clicker-left" ></div></a>'
     + '  </div>'
     + '</div>';
   gallery = gallery.concat(photo);
