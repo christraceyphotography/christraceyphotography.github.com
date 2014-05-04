@@ -59,3 +59,35 @@
   padding-right: 20px;
   padding-bottom: 20px;
 }
+
+.clicker-top {
+  cursor: pointer;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+}
+
+.clicker-bottom {
+  cursor: pointer;
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.clicker-right {
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+}
+
+.clicker-left {
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+
