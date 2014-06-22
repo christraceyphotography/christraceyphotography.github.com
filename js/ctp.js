@@ -9,7 +9,9 @@ function ctpInit() {
 
   gallery_template = 'gallery.html';
   if (previewMode()) {
-    url = portfolio[getAnchor()];
+    url = portfolio[getAnchor()].src;
+    id = portfolio[getAnchor()].id;
+    orientation = portfolio[getAnchor()].orientation;
     gallery_template = 'preview.html';
   }
   $('.gallery').load(gallery_template);

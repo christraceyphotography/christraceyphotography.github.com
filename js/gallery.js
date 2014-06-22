@@ -1,17 +1,17 @@
 var gallery = "";
 for(var key in portfolio) {
-  photo = '<div class="mega-entry" id="mega-entry-1" data-src="' + portfolio[key] + '" data-width="504" data-height="400">'
+  photo = '<div class="mega-entry" id="mega-entry-1" data-src="' + portfolio[key].src + '" data-width="504" data-height="400">'
     + '  <div class="mega-hover">'
     + '    <div class="mega-hovertitle"><div class="mega-hoversubtitle"></div></div>'
     + '    <div class="mega-hoveractions">'
     + '      <a href="./#' + key + '" title="external link"><div id="' + key + '" class="mega-hoveraction mega-hoverlink"></div></a>'
-    + '      <a href="http://500px.com/photo/' + key + '" title="comment, download, print"><div id="' + key + '" class="mega-hoveraction mega-hoverprint"></div></a>'
+    + '      <a href="http://500px.com/photo/' + portfolio[key].id + '" title="comment, download, print"><div id="' + key + '" class="mega-hoveraction mega-hoverprint"></div></a>'
     + '    </div>'
 
-    + '    <a class="fancybox" title="view" href="' + portfolio[key]  + '" rel="group1"><div class="clicker-top" ></div></a>'
-    + '    <a class="fancybox" title="view" href="' + portfolio[key]  + '" rel="group2"><div class="clicker-bottom" ></div></a>'
-    + '    <a class="fancybox" title="view" href="' + portfolio[key]  + '" rel="group3"><div class="clicker-right" ></div></a>'
-    + '    <a class="fancybox" title="view" href="' + portfolio[key]  + '" rel="group4"><div class="clicker-left" ></div></a>'
+    + '    <a class="fancybox" title="view" href="' + portfolio[key].src  + '" rel="group1"><div class="zoomable clicker-top" ></div></a>'
+    + '    <a class="fancybox" title="view" href="' + portfolio[key].src  + '" rel="group2"><div class="zoomable clicker-bottom" ></div></a>'
+    + '    <a class="fancybox" title="view" href="' + portfolio[key].src  + '" rel="group3"><div class="zoomable clicker-right" ></div></a>'
+    + '    <a class="fancybox" title="view" href="' + portfolio[key].src  + '" rel="group4"><div class="zoomable clicker-left" ></div></a>'
     + '  </div>'
     + '</div>';
   gallery = gallery.concat(photo);
@@ -30,7 +30,7 @@ jQuery(document).ready(function() {
     defaultWidth:980,
     paddingHorizontal:10,
     paddingVertical:10,
-    layoutarray:[0]   // Defines the Layout Types which can be used in the Gallery. 2-9 or "random". You can define more than one, like {5,2,6,4} where the first items will be orderd in layout 5, the next comming items in layout 2, the next comming items in layout 6 etc... You can use also simple {9} then all item ordered in Layout 9 type.
+    layoutarray:[7,8]   // Defines the Layout Types which can be used in the Gallery. 2-9 or "random". You can define more than one, like {5,2,6,4} where the first items will be orderd in layout 5, the next comming items in layout 2, the next comming items in layout 6 etc... You can use also simple {9} then all item ordered in Layout 9 type.
   });
 
   jQuery('.filter').click(function() {
