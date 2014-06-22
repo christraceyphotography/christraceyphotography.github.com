@@ -27,7 +27,7 @@ function previewMode() {
     if ( isNaN(anchor) ) {
       return false;
     } else {
-      valid = portfolio[anchor] != undefined ? true : false;
+      valid = !portfolio[anchor].blank && (portfolio[anchor] != undefined) ? true : false;
       return valid;
     }
   } else {

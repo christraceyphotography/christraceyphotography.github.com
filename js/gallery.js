@@ -1,20 +1,34 @@
 var gallery = "";
-for(var key in portfolio) {
-  photo = '<div class="mega-entry" id="mega-entry-1" data-src="' + portfolio[key].src + '" data-width="504" data-height="400">'
-    + '  <div class="mega-hover">'
-    + '    <div class="mega-hovertitle"><div class="mega-hoversubtitle"></div></div>'
-    + '    <div class="mega-hoveractions">'
-    + '      <a href="./#' + key + '" title="external link"><div id="' + key + '" class="mega-hoveraction mega-hoverlink"></div></a>'
-    + '      <a href="http://500px.com/photo/' + portfolio[key].id + '" title="comment, download, print"><div id="' + key + '" class="mega-hoveraction mega-hoverprint"></div></a>'
-    + '    </div>'
+var galleryItems = {};
+// index = 0;
+// for(var key in Object.keys(portfolio).reverse()) {
+//   galleryItems[index++] = portfolio[key];
+// }
+//
+// debugger;
+for (var i = Object.keys(portfolio).length; i > 0; i--) {
 
-    + '    <a class="fancybox" title="view" href="' + portfolio[key].src  + '" rel="group1"><div class="zoomable clicker-top" ></div></a>'
-    + '    <a class="fancybox" title="view" href="' + portfolio[key].src  + '" rel="group2"><div class="zoomable clicker-bottom" ></div></a>'
-    + '    <a class="fancybox" title="view" href="' + portfolio[key].src  + '" rel="group3"><div class="zoomable clicker-right" ></div></a>'
-    + '    <a class="fancybox" title="view" href="' + portfolio[key].src  + '" rel="group4"><div class="zoomable clicker-left" ></div></a>'
-    + '  </div>'
-    + '</div>';
-  gallery = gallery.concat(photo);
+  var photo = portfolio[i];
+  var galleryItem = '<div class="mega-entry"></div>';
+
+  if (!photo.blank) {
+    galleryItem = '<div class="mega-entry" id="mega-entry-1" data-src="' + photo.src + '" data-width="504" data-height="400">'
+      + '  <div class="mega-hover">'
+      + '    <div class="mega-hovertitle"><div class="mega-hoversubtitle"></div></div>'
+      + '    <div class="mega-hoveractions">'
+      + '      <a href="./#' + i + '" title="external link"><div id="' + i + '" class="mega-hoveraction mega-hoverlink"></div></a>'
+      + '      <a href="http://500px.com/photo/' + photo.id + '" title="comment, download, print"><div id="' + i + '" class="mega-hoveraction mega-hoverprint"></div></a>'
+      + '    </div>'
+
+      + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group1"><div class="zoomable clicker-top" ></div></a>'
+      + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group2"><div class="zoomable clicker-bottom" ></div></a>'
+      + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group3"><div class="zoomable clicker-right" ></div></a>'
+      + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group4"><div class="zoomable clicker-left" ></div></a>'
+      + '  </div>'
+      + '</div>';
+  }
+
+  gallery = gallery.concat(galleryItem);
 }
 
 $('.megafolio-container')[0].innerHTML = gallery;

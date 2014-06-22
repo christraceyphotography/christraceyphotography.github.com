@@ -257,7 +257,8 @@ website:   	http://www.themepunch.com
 	.noborder .mega-entry .mega-entry-innerwrap	{	border:0px solid #fff;}
 	.noborder .mega-entry .mega-entry-innerwrap	{	border:0px solid #fff;}
 
-	.light-bg-entries .mega-entry .mega-entry-innerwrap	{	background-color:#ccc !important;}
+	/* .light-bg-entries .mega-entry .mega-entry-innerwrap	{	background-color:#ccc !important;} */
+	.light-bg-entries .mega-entry .mega-entry-innerwrap	{	background-color:#000 !important;}
 	.dark-bg-entries .mega-entry .mega-entry-innerwrap	{	background-color:rgb(0,0,0) !important; background-color:rgba(0,0,0,0.3) !important;}
 
 	.mega-entry								{
