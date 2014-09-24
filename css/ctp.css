@@ -26,6 +26,11 @@
   padding-top: 20px;
 }
 
+.ctpLogo {
+  width: 200px;
+  padding: 5px;
+}
+
 .gallery {
   max-width: 1400px;
 }
