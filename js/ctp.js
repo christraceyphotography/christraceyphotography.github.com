@@ -10,7 +10,7 @@ function ctpInit() {
   gallery_template = 'gallery.html';
   if (previewMode()) {
     url = portfolio[getAnchor()].src;
-    id = portfolio[getAnchor()].id;
+    id500px = portfolio[getAnchor()].id500px;
     orientation = portfolio[getAnchor()].orientation;
     gallery_template = 'preview.html';
   }

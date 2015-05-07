@@ -17,7 +17,7 @@ for (var i = Object.keys(portfolio).length; i > 0; i--) {
       + '    <div class="mega-hovertitle"><div class="mega-hoversubtitle"></div></div>'
       + '    <div class="mega-hoveractions">'
       + '      <a href="./#' + i + '" title="external link"><div id="' + i + '" class="mega-hoveraction mega-hoverlink"></div></a>'
-      + '      <a href="http://500px.com/photo/' + photo.id + '" title="comment, download, print"><div id="' + i + '" class="mega-hoveraction mega-hoverprint"></div></a>'
+      + '      <a href="http://500px.com/photo/' + photo.id500px + '" title="comment, download, print"><div id="' + i + '" class="mega-hoveraction mega-hoverprint"></div></a>'
       + '    </div>'
 
       + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group1"><div class="zoomable clicker-top" ></div></a>'

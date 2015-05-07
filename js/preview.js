@@ -1,7 +1,7 @@
 $('.photo').attr("src", url);
 setImageSize();
 
-var print_url = "http://500px.com/photo/" + id;
+var print_url = "http://500px.com/photo/" + id500px;
 $('.action').attr("href", print_url);
 
 
