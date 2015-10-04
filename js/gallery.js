@@ -45,7 +45,7 @@ jQuery(document).ready(function() {
     paddingHorizontal:10,
     paddingVertical:10,
     //layoutarray in reverse order
-    layoutarray:[7,5,7,8]   // Defines the Layout Types which can be used in the Gallery. 2-9 or "random". You can define more than one, like {5,2,6,4} where the first items will be orderd in layout 5, the next comming items in layout 2, the next comming items in layout 6 etc... You can use also simple {9} then all item ordered in Layout 9 type.
+    layoutarray:[7,7,5,7,8]   // Defines the Layout Types which can be used in the Gallery. 2-9 or "random". You can define more than one, like {5,2,6,4} where the first items will be orderd in layout 5, the next comming items in layout 2, the next comming items in layout 6 etc... You can use also simple {9} then all item ordered in Layout 9 type.
   });
 
   jQuery('.filter').click(function() {
