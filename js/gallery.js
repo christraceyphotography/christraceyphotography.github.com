@@ -16,7 +16,7 @@ for (var i = Object.keys(portfolio).length; i > 0; i--) {
       + '  <div class="mega-hover">'
       + '    <div class="mega-hovertitle"><div class="mega-hoversubtitle"></div></div>'
       + '    <div class="mega-hoveractions">'
-      + '      <a href="./#' + i + '" title="external link"><div id="' + i + '" class="mega-hoveraction mega-hoverlink"></div></a>'
+      + '      <a href="./preview.html#' + i + '" title="external link"><div id="' + i + '" class="mega-hoveraction mega-hoverlink"></div></a>'
       + '      <a href="http://500px.com/photo/' + photo.id500px + '" target="_blank" title="comment, download, print"><div id="' + i + '" class="mega-hoveraction mega-hoverprint"></div></a>'
       + '    </div>'
 

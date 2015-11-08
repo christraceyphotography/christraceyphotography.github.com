@@ -8,7 +8,7 @@ function galleryInit() {
     url = portfolio[getAnchor()].src;
     id500px = portfolio[getAnchor()].id500px;
     orientation = portfolio[getAnchor()].orientation;
-    gallery_template = 'preview.html';
+    gallery_template = 'previewTemplate.html';
   }
   $('.galleryTemplate').load(gallery_template);
 }
