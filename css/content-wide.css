@@ -1,0 +1,19 @@
+.content {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.profile_pic {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+.profile_text {
+  display: inline-block;
+  width: 70%;
+}
+
+.profile {
+  width: 50%;
+}

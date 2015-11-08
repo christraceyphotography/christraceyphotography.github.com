@@ -6,9 +6,8 @@
 .main {
   font-family: corbert-regular, sans-serif;
   background-color:#000000;
-}
-
-.header {
+  clear: both;
+  color: #FFFFFF;
 }
 
 .ctpHeading {

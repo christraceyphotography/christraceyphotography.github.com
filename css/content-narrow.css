@@ -1,0 +1,19 @@
+.contact a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.profile_text {
+  width: 100%;
+}
+
+.profile_pic {
+  width: 40%;
+  float: left;
+}
+
+.profile {
+  width: 50%;
+}
+
+
