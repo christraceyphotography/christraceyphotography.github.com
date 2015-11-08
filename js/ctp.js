@@ -3,9 +3,7 @@ function getAnchor() {
 }
 
 function ctpInit() {
-	$('.ctpHeader').load('ctpLogo.html');
-	$('.header_icons').load('icons.html');
-	$('.info').load('info.html');
+	$('.ctpHeaderTemplate').load('ctpHeading.html');
 
   gallery_template = 'gallery.html';
   if (previewMode()) {
@@ -14,10 +12,7 @@ function ctpInit() {
     orientation = portfolio[getAnchor()].orientation;
     gallery_template = 'preview.html';
   }
-  $('.gallery').load(gallery_template);
-
-	$('.ctpHeaderUnderMenu').load('ctpLogo.html');
-
+  $('.galleryTemplate').load(gallery_template);
 }
 
 function previewMode() {
