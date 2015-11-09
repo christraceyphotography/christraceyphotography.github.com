@@ -1,30 +1,13 @@
 var gallery = "";
 var galleryItems = {};
-// index = 0;
-// for(var key in Object.keys(portfolio).reverse()) {
-//   galleryItems[index++] = portfolio[key];
-// }
-//
-// debugger;
-for (var i = Object.keys(portfolio).length; i > 0; i--) {
 
+for (var i = Object.keys(portfolio).length; i > 0; i--) {
   var photo = portfolio[i];
   var galleryItem = '<div class="mega-entry"></div>';
 
   if (!photo.blank) {
-    galleryItem = '<div class="mega-entry" id="mega-entry-1" data-src="' + photo.src + '" data-width="504" data-height="400">'
-      + '  <div class="mega-hover">'
-      + '    <div class="mega-hovertitle"><div class="mega-hoversubtitle"></div></div>'
-      + '    <div class="mega-hoveractions">'
-      + '      <a href="./preview.html#' + i + '" title="external link"><div id="' + i + '" class="mega-hoveraction mega-hoverlink"></div></a>'
-      + '      <a href="http://500px.com/photo/' + photo.id500px + '" target="_blank" title="comment, download, print"><div id="' + i + '" class="mega-hoveraction mega-hoverprint"></div></a>'
-      + '    </div>'
-
-      + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group1"><div class="zoomable clicker-top" ></div></a>'
-      + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group2"><div class="zoomable clicker-bottom" ></div></a>'
-      + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group3"><div class="zoomable clicker-right" ></div></a>'
-      + '    <a class="fancybox" title="view" href="' + photo.src  + '" rel="group4"><div class="zoomable clicker-left" ></div></a>'
-      + '  </div>'
+    galleryItem = '<div class="mega-entry zoomable" id="mega-entry-1" data-src="' + photo.src + '" data-width="504" data-height="400">'
+      + '  <a href="http://500px.com/photo/' + photo.id500px + '" target="_blank"<div class="mega-hover"></div></a>'
       + '</div>';
   }
 
@@ -32,7 +15,6 @@ for (var i = Object.keys(portfolio).length; i > 0; i--) {
 }
 
 $('.megafolio-container')[0].innerHTML = gallery;
-$('.mega-hoverlink').click(function(eventObject) { show_photo(eventObject); });
 
 jQuery(document).ready(function() {
   var api=jQuery('.megafolio-container').megafoliopro({
