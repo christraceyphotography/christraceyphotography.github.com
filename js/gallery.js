@@ -7,7 +7,7 @@ for (var i = Object.keys(portfolio).length; i > 0; i--) {
 
   if (!photo.blank) {
     galleryItem = '<div class="mega-entry zoomable" id="mega-entry-1" data-src="' + photo.src + '" data-width="504" data-height="400">'
-      + '  <a href="http://500px.com/photo/' + photo.id500px + '" target="_blank"<div class="mega-hover"></div></a>'
+      + '  <a href="https://christracey.smugmug.com/Portfolio/Favourites/' + photo.smugmugId + '" target="_blank"<div class="mega-hover"></div></a>'
       + '</div>';
   }
 
